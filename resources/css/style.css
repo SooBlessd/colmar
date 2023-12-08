@@ -1,3 +1,61 @@
 html{
-    color: green;
+    
+}
+.nav{
+    height:64px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.nav .logo{
+    display: flex;
+    align-items: center;
+   
+   
+}
+.nav .logo ul{
+    padding:0;
+    font-size:32px;
+ 
+}
+.nav .logo ul.bold{
+    font-weight:bold;
+}
+.navbar{
+    display:flex;
+    
+}
+.navbar a{
+    font-size: 32px;
+    color: black;
+    text-decoration: none;
+    padding-left:16px;
+    
+}
+.navbar .cta{
+    padding-right: 24px;
+}
+.hero{
+    display:inline-flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    background-color: whitesmoke;
+}
+.hero-text{
+  display: flex;
+  flex-direction: column;
+  align-content: left;
+  text-wrap:wrap;
+
+}
+.hero img{
+    padding: 32px 24px;
+    width:60%;
+}
+.hero button{
+    background-color: grey;
+    padding: 8px;
+    border-radius: 3px;
 }

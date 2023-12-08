@@ -59,3 +59,7 @@ html{
     padding: 8px;
     border-radius: 3px;
 }
+.information{
+    display:flex;
+    flex-direction:row;
+}

@@ -1,5 +1,8 @@
 html{
-    
+  color:; 
+  font-family: sans-serif;
+  font-size:16px;
+  font-weight: ;
 }
 .nav{
     height:64px;
@@ -17,10 +20,13 @@ html{
 .nav .logo ul{
     padding:0;
     font-size:32px;
- 
+    text-transform: uppercase;
 }
 .nav .logo ul.bold{
     font-weight:bold;
+}
+.regular{
+    opacity:30%;
 }
 .navbar{
     display:flex;
@@ -48,6 +54,7 @@ html{
   flex-direction: column;
   align-content: left;
   text-wrap:wrap;
+  width:40%;
 
 }
 .hero img{
@@ -62,4 +69,80 @@ html{
 .information{
     display:flex;
     flex-direction:row;
+    padding-top: 32px;
+    padding-bottom:32px;
+    
+}
+.information .information-text{
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    width: 60%;
+    padding-right: 24px;
+    padding-left: 24px;
+}
+.information-text img{  
+}
+.information-text h2{
+    font-size: 2rem;
+    padding-top: 32px;
+    font-weight: 600;
+    margin: 0;
+}
+.information-text p{
+    padding-top: 24px;
+    margin:0;
+}
+.information-card-container{
+    display: flex;
+    flex-direction:row;
+    padding: 16px;
+}
+.information-card{
+    width:40%;
+    padding:0;
+}
+.information-card-text{
+    width:65%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left:16px;
+}
+.information-card-container img{
+    width:35%;
+    height:auto;
+    
+}
+.information-card-container.our-guest{
+    background-color: whitesmoke;
+}
+
+.information-card-container .title {
+    font-size:1.75rem;
+    opacity: 70%;
+    font-weight: bold;
+    padding-top: 0px;
+    padding-bottom: 8px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.information-card-container h4{
+    opacity: 70%;
+    font-weight:400;
+    padding-top: 0px;
+    padding-bottom: 8px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.information-card-container a{
+    font-weight:500;
+    text-decoration: none;
+    color:blue;
+    padding-top: 0px;
+    padding-bottom: 8px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
 }

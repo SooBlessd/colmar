@@ -145,3 +145,29 @@ html{
     margin-top: 0px;
     margin-bottom: 0px;
 }
+.courses{
+    padding:32px 72px;
+    background-color:whitesmoke;
+}
+.course-heading{
+    text-align: center;
+}
+.course-card-container{
+    display:inline-flex;
+    flex-flow: row wrap;
+    gap: 32px;
+    
+}
+.course-card img{
+    height:auto;
+    width:100%;
+}
+.course-card{
+    width: calc((100% - 144px) / 3 );
+    background-color: white;
+    border-radius: 6px;
+}
+.course-card-text{
+    text-wrap: wrap;
+
+}

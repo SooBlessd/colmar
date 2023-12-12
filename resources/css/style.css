@@ -192,3 +192,58 @@ html{
     opacity: 70%;
 }
 
+.thesis-heading{
+    text-align: center;
+    font-weight: bold;
+    opacity: 70%;
+}
+.thesis-container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.thesis-video{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 60%;
+    padding-right: 24px;
+    padding-left: 24px;
+}
+.thesis-card-container{
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+}
+.thesis-cards img{
+    width: 35%;
+    height: auto;
+}
+.thesis-card-text{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 16px;
+}
+.thesis-card-text .title{
+    font-size: 1.75rem;
+        opacity: 70%;
+        font-weight: bold;
+        padding-top: 0px;
+        padding-bottom: 8px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+}
+.thesis-card-text h4{
+    opacity: 70%;
+    font-weight: 400;
+    padding-top: 0px;
+    padding-bottom: 8px;
+    margin-top: 0px;
+    margin-bottom: 0px
+}
+.thesis-card-container.fisma {
+    background-color: whitesmoke;
+}

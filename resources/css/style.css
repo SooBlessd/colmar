@@ -151,6 +151,8 @@ html{
 }
 .course-heading{
     text-align: center;
+    font-weight: bold;
+    opacity: 70%;
 }
 .course-card-container{
     display:inline-flex;
@@ -167,7 +169,26 @@ html{
     background-color: white;
     border-radius: 6px;
 }
-.course-card-text{
-    text-wrap: wrap;
-
+.course-card-text {
+    padding:16px;
 }
+.course-card .course-name{
+    opacity: 75%;
+    font-weight:600;
+    font-size: 1.5rem;
+    margin-bottom:8px;
+    margin-top:0;
+}
+.course-card .uppcase{
+    text-transform: uppercase;
+    font-weight: 400;
+    opacity: 70%;
+    margin-top:0;
+    margin-bottom:8px;
+    font-size: 1.125rem;
+}
+.course-card .course-information{
+    font-weight: 400;
+    opacity: 70%;
+}
+

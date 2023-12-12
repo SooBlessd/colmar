@@ -247,3 +247,14 @@ html{
 .thesis-card-container.fisma {
     background-color: whitesmoke;
 }
+.footer ul{
+    list-style-type: none;
+    padding: 16px 24px;
+    display:inline-block;
+}
+.footer .terms{
+    float:right;
+}
+.footer .privacy{
+    float: right;
+}

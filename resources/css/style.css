@@ -101,9 +101,45 @@ html{
 .hero button{
     background-color: grey;
     padding: 8px;
-    border-radius: 3px;
     width:60%;
 }
+/*Responsive Design for Hero section*/
+/*mobile*/
+
+@media screen and (max-width:768px) {
+    .hero{
+        display:block;
+
+    }
+    .hero img{
+        width:100%;
+        padding:0px;
+    }
+    .hero-text{
+        padding:32px 16px;
+        width: 100%;
+        text-wrap:wrap;
+        align-content:center;
+        line-height: 2em;
+        background-color:whitesmoke;
+    }
+    .hero-text h1{
+        font-size:2em;
+        margin:auto;
+        padding-bottom: 1em;
+    }
+    .hero-text p{
+        font-size:1.125em;
+        margin:auto;
+    }
+    .hero button{
+        width:90%;
+        align-items: center;
+        font-weight:500;
+        color: white;
+    }
+}
+
 .information{
     display:flex;
     flex-direction:row;

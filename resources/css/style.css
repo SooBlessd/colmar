@@ -9,7 +9,9 @@ html{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-
+}
+.navbar-icons{
+    display:none;
 }
 .nav .logo{
     display: flex;
@@ -42,6 +44,40 @@ html{
 .navbar .cta{
     padding-right: 24px;
 }
+/* Nav bar Resposive Design*/
+@media screen and (max-width:768px){
+    .nav{
+        display:block;
+    }
+    .navbar {
+        display:none;
+    }
+    .nav .logo {
+        display:none;
+    }
+    .nav .nav-bar-mobile{
+        display: infline-flex;
+        height: 64px;
+        display:flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+    }
+    .nav-bar-mobile .logo-icon{
+        float:left;
+    }
+    .nav-bar-mobile .login-icon{
+        float:right;
+    }
+
+}
+/* Desktop view */
+@media screen and (min-width:768px) and (max-width:1600px){
+    .nav-bar-mobile{
+        display: none;
+    }
+}
+
+
 .hero{
     display:inline-flex;
     flex-direction:row;
@@ -54,8 +90,9 @@ html{
   flex-direction: column;
   align-content: left;
   text-wrap:wrap;
-  width:40%;
-
+  width: 40%;
+  opacity: 70%;
+  line-height: 2;
 }
 .hero img{
     padding: 32px 24px;
@@ -65,13 +102,14 @@ html{
     background-color: grey;
     padding: 8px;
     border-radius: 3px;
+    width:60%;
 }
 .information{
     display:flex;
     flex-direction:row;
     padding-top: 32px;
     padding-bottom:32px;
-    
+    line-height: 2;
 }
 .information .information-text{
     display:flex;
@@ -210,6 +248,12 @@ html{
     width: 60%;
     padding-right: 24px;
     padding-left: 24px;
+}
+.thesis-video h2{
+    opacity: 70%;
+}
+.thesis-video p{
+    opacity: 70%;
 }
 .thesis-card-container{
     display: flex;

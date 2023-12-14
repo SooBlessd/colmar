@@ -452,3 +452,16 @@ html{
 .footer .privacy{
     float: right;
 }
+/* Responsive Design for footer*/
+/* desktop design*/
+@media only screen and (min-width:768px) and (max-width:1600px) {
+
+}
+@media only screen and (max-width: 768px) {
+    .footer{
+        text-align: center;
+    }
+    .footer .terms, .footer .privacy{
+        display: none;
+    }
+}

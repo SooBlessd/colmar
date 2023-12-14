@@ -323,7 +323,7 @@ html{
     opacity: 70%;
 }
 
-/* Responsive Design for Information Section*/
+/* Responsive Design for Course Section*/
 /* desktop design*/
 @media only screen and (min-width:768px) and (max-width:1600px) {
     .course-card {
@@ -421,6 +421,26 @@ html{
 .thesis-card-container.fisma {
     background-color: whitesmoke;
 }
+/* Responsive Design for Thesis*/
+/* desktop design*/
+@media only screen and (min-width:768px) and (max-width:1600px) {
+    
+}
+
+
+/* mobile design*/
+@media only screen and (max-width: 768px) {
+    .thesis img {
+        display:block;
+    }
+    .thesis-video{
+        width: 100%;
+    }
+    .thesis-cards, .thesis-video h2, .thesis-video p{
+        display:none;
+    }
+}
+
 .footer ul{
     list-style-type: none;
     padding: 16px 24px;

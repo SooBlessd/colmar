@@ -278,44 +278,88 @@ html{
     font-weight: bold;
     opacity: 70%;
 }
-.course-card-container{
-    display:inline-flex;
+.course-card-container {
+    display: inline-flex;
     flex-flow: row wrap;
     gap: 32px;
-    
+
 }
-.course-card img{
-    height:auto;
-    width:100%;
+
+.course-card img {
+    height: auto;
+    width: 100%;
 }
-.course-card{
-    width: calc((100% - 144px) / 3 );
+
+/*
+.course-card {
+    width: calc((100% - 144px) / 3);
     background-color: white;
     border-radius: 6px;
 }
+*/
 .course-card-text {
-    padding:16px;
+    padding: 16px;
 }
-.course-card .course-name{
+
+.course-card .course-name {
     opacity: 75%;
-    font-weight:600;
+    font-weight: 600;
     font-size: 1.5rem;
-    margin-bottom:8px;
-    margin-top:0;
+    margin-bottom: 8px;
+    margin-top: 0;
 }
-.course-card .uppcase{
+
+.course-card .uppcase {
     text-transform: uppercase;
     font-weight: 400;
     opacity: 70%;
-    margin-top:0;
-    margin-bottom:8px;
+    margin-top: 0;
+    margin-bottom: 8px;
     font-size: 1.125rem;
 }
-.course-card .course-information{
+
+.course-card .course-information {
     font-weight: 400;
     opacity: 70%;
 }
 
+/* Responsive Design for Information Section*/
+/* desktop design*/
+@media only screen and (min-width:768px) and (max-width:1600px) {
+    .course-card {
+            width: calc((100% - 144px) / 3);
+            background-color: white;
+            border-radius: 6px;
+        }
+ }
+
+
+/* mobile design*/
+@media only screen and (max-width: 768px) {
+    .course-heading{
+        padding-bottom:16px;
+    }
+    .course-card-container{
+        display:flex;
+        flex-direction: column;
+        gap: 8px;
+        width:100%;
+    }
+    .course-card img, .course-card-text .uppcase, .course-card-text .course-information{
+        display:none;
+        
+    }
+    .course-card-container .course-name{
+       
+    }
+    .course-card-text{
+        width:100%;
+        background-color:grey;
+        padding-top:16px;
+        padding-bottom: 24px;
+    }
+    
+}
 .thesis-heading{
     text-align: center;
     font-weight: bold;

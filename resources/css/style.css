@@ -81,7 +81,7 @@ html{
 .hero{
     display:inline-flex;
     flex-direction:row;
-    justify-content:center;
+    justify-content: center;
     align-items:center;
     background-color: whitesmoke;
 }
@@ -92,16 +92,31 @@ html{
   text-wrap:wrap;
   width: 40%;
   opacity: 70%;
-  line-height: 2;
+  padding-right: 56px;
+  
+}
+.hero-text h1{
+    font-size:3rem;
+    line-height: 1;
+    margin-bottom:0;
+    width:85%;
+}
+.hero-text p{
+    font-size: 2rem;
+    line-height: 1;
+    width:85%
 }
 .hero img{
     padding: 32px 24px;
     width:60%;
 }
 .hero button{
-    background-color: grey;
+    background-color: #343333;
     padding: 8px;
-    width:60%;
+    width:85%;
+    font-size:1.75em;
+    color:white;
+    border: none;
 }
 /*Responsive Design for Hero section*/
 /*mobile*/
@@ -119,9 +134,8 @@ html{
         padding:32px 16px;
         width: 100%;
         text-wrap:wrap;
-        align-content:center;
+        align-self:center;
         line-height: 2em;
-        background-color:whitesmoke;
     }
     .hero-text h1{
         font-size:2em;
@@ -137,6 +151,8 @@ html{
         align-items: center;
         font-weight:500;
         color: white;
+        margin-top: 24px;
+        align-self: center;
     }
 }
 
@@ -173,8 +189,8 @@ html{
     padding: 16px;
 }
 .information-card{
-    width:40%;
-    padding:0;
+    /*width:40%;
+    padding:0;*/
 }
 .information-card-text{
     width:65%;
@@ -219,9 +235,43 @@ html{
     margin-top: 0px;
     margin-bottom: 0px;
 }
+
+/* Responsive Design for Information Section*/
+/* desktop design*/
+@media only screen and (min-width:768px) and (max-width:1600px){
+    .information-card {
+        width: 40%;
+        padding: 0;
+    }
+}
+/* mobile design*/
+@media only screen and (max-width: 768px) {
+    .information .information-text{
+        display:none;
+    }
+    /* Make the information cards stack on top of each other */
+    .information{
+        display:block;
+    }
+    .information-card-container{
+        display:flex;
+        flex-direction: column;
+        column-gap: 60px;
+        width: 100%;
+        padding:16px;
+        padding-bottom:0px;
+        
+    }
+    .information-card-container img{
+        width: 100%;
+    }
+}
+
+
+
 .courses{
     padding:32px 72px;
-    background-color:whitesmoke;
+    background-color: whitesmoke;
 }
 .course-heading{
     text-align: center;
